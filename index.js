@@ -11,7 +11,7 @@ app.get("/produtos", function(req,res){
     res.send("<h1>Lista de Produtos!</h1>");
 })
 
-//rota com parametro 
+//rota com parametro
 app.get("/consulta/:parametro", function(req,res){
     //req --> dados enviados pelo cliente
     //res --> resposta enviada pelo servidor de volta ao cliente
@@ -28,7 +28,7 @@ app.get("/cadastro/{:nome}", function(req,res){
     }else{
         res.send("produto criado!");
     }
-    
+
 })
 
 
